@@ -331,7 +331,7 @@ class ActiveRecord extends BaseActiveRecord
      */
     public static function index()
     {
-        return Inflector::pluralize(Inflector::camel2id(StringHelper::basename(get_called_class()), '-'));
+        return Inflector::camel2id(StringHelper::basename(get_called_class()), '-');
     }
 
     /**
